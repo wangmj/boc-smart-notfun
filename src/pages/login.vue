@@ -45,7 +45,10 @@ export default {
       this.$refs.loginForm.validate(valid => {
         console.log("Validate :" + valid);
         if (valid) {
-          sessionStorage.setItem("boc_userName", this.loginForm.userName);
+          sessionStorage.setItem("boc_userInfo", JSON.stringify({
+            userName: this.loginForm.userName,
+            loginTime:new Date()
+          }));
           window.location.reload();
         }
       });

@@ -6,10 +6,19 @@ $ git clone --depth=1https://github.com/wangmj/boc-smart-notfun my-project
 $ cd my-project
 ```
 
+### 安装
+```bash
+$ npm install
+```
+
+###运行
+```bash
+$ npm run dev
+```
   
 ## 目录结构
 
-完整的开发框架，提供了涵盖中后台开发的各类功能和坑位，下面是整个项目的目录结构。
+下面是整个项目的目录结构。
 
 ```bash
 ├── build                    #webpack配置
